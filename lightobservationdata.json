@@ -1,0 +1,13 @@
+{
+"time":1391141532000,
+"temperature": 15,
+"humidity": 15,
+"pressure": 1.02,
+"windspeed": 15,
+"windDirection": 150,
+"totalRadiance": 48.9,
+"directRadiation": 15,
+"diffuseRadiation": 15.7,
+"componenttemperature":60
+}
+

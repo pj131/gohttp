@@ -1,0 +1,18 @@
+{
+"time":1391141532000,
+"status ": [
+{
+"ID ": 1,
+"activePower":12,
+"reactivePower": 1.02,
+"status":1
+},
+{
+"ID": 2,
+"activePower":0,
+"reactivePower": 0,
+"status":9
+}
+]
+}
+

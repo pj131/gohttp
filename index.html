@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>http实时数据接入测试</title>
+</head>
+
+<body>
+
+
+
+<form id="Wind" name="form1" action="" style="text-align: center;">
+    <fieldset>
+        <legend>风电查询</legend>
+        时间：
+            <input type="text" name="Time" value="1531796100000"><br>
+        风电场ID：
+            <select name="SiteID" type="text"><br>
+                <option value=1 type="text" selected>YNKMLB</option>
+                <option value=2 type="text">YNHDXMSA</option>
+                <option value=3 type="text">YNKMSSP</option>
+                <option value=4 type="text">YNKMYN</option>
+            </select>
+        <br>
+        <input value="5.1	实时功率数据"
+               type="submit"
+               onclick="form1.action='API/realTimePowerdata4wind.jsp';form1.submit();"/>
+        <input value="5.2	短期预测功率接口"
+               type="submit"
+               onclick="form1.action='API/shortpredictionPowerdata4wind.jsp';form1.submit();"/>
+        <input value="5.3	超短期预测功率接口"
+               type="submit"
+               onclick="form1.action='API/ultrashortpredictionPowerdata4wind.jsp';form1.submit();"/>
+        <input value="5.4	测风塔实时数据"
+               type="submit"
+               onclick="form1.action='API/windPower.jsp';form1.submit();"/><br>
+        <input value="5.6	风机运行状态"
+               type="submit"
+               onclick="form1.action='API/WindPowerGeneratorStatus.jsp';form1.submit();"/>
+        <input value="5.7	检修计划"
+               type="submit"
+               onclick="form1.action='API/WindPoweCheckPlan.jsp';form1.submit();"/>
+        <input value="5.8	限电记录"
+               type="submit"
+               onclick="form1.action='API/WindPowerRestrictedPlan.jsp';form1.submit();"/>
+        <input value="5.9	发电计划"
+               type="submit"
+               onclick="form1.action='API/WindPowerGenerationPlan.jsp';form1.submit();"/><br>
+    </fieldset>
+</form>
+
+
+
+<form id="Light" name="form2" action="" style="text-align: center;">
+    <fieldset>
+        <legend>光伏查询</legend>
+        时间：
+        <input type="text" name="Time" value="1531796100000"><br>
+        光伏电场ID：
+        <select name="SiteID" type="text"><br>
+            <option value=1 type="text" selected>GFDC1</option>
+            <option value=2 type="text">GFDC2</option>
+            <option value=3 type="text">GFDC3</option>
+            <option value=4 type="text">GFDC4</option>
+        </select>
+        <br>
+        <input value="6.1	实时功率数据"
+               type="submit"
+               onclick="form2.action='API/realTimePowerdata4photovoltaic.jsp';form2.submit();"/>
+        <input value="6.2	短期预测功率接口"
+               type="submit"
+               onclick="form2.action='API/shortpredictionPowerdata4photovoltaic.jsp';form2.submit();"/>
+        <input value="6.3	超短期预测功率接口"
+               type="submit"
+               onclick="form2.action='API/ultrashortpredictionPowerdata4photovoltaic.jsp';form2.submit();"/>
+        <input value="6.4	实时观测数据数据"
+               type="submit"
+               onclick="form2.action='API/observationData4photovoltaic.jsp';form2.submit();"/><br>
+        <input value="6.6	逆变器运行状态"
+               type="submit"
+               onclick="form2.action='API/InverterStatus.jsp';form2.submit();"/>
+        <input value="6.7	检修计划"
+               type="submit"
+               onclick="form2.action='API/PhotovoltaicCheckPlan.jsp';form2.submit();"/>
+        <input value="6.8	限电记录"
+               type="submit"
+               onclick="form2.action='API/PhotovoltaicRestrictedPlan.jsp';form2.submit();"/>
+        <input value="6.9	发电计划"
+               type="submit"
+               onclick="form2.action='API/PhotovoltaicGenerationPlan.jsp';form2.submit();"/><br>
+    </fieldset>
+</form>
+
+
+
+
+
+
+</body>
+</html>
